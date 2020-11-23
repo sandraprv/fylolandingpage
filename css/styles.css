@@ -1,0 +1,410 @@
+/* ------ STANDARD ------ */
+
+:root {
+  --dark-blue-intro-email-bg: hsl(217, 28%, 15%);
+  --dark-blue-main-bg: hsl(218, 28%, 13%);
+  --dark-blue-footer-bg: hsl(216, 53%, 9%);
+  --dark-blue-testim-bg: hsl(219, 30%, 18%);
+  --cyan-button: hsl(176, 68%, 64%);
+  --blue-button: hsl(198, 60%, 50%);
+  --blue-gradient1: linear-gradient(
+    90deg,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  --blue-gradient2: linear-gradient(
+    90deg,
+    hsl(176, 68%, 64%, 0.9),
+    hsla(198, 60%, 50%, 0.9)
+  );
+  --light-red-error: hsl(0, 100%, 63%);
+}
+
+html {
+  background-color: var(--dark-blue-footer-bg);
+}
+
+* {
+  font-size: 14px;
+  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1,
+nav,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+nav, footer {
+  padding: 2rem;
+}
+
+body {
+  background-color: var(--dark-blue-main-bg);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.background-top {
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-color: var(--dark-blue-intro-email-bg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 800px;
+}
+
+section {
+  padding: 2rem;
+}
+
+.intro,
+.properties,
+.stay-prod,
+.testimonials,
+.card,
+.form {
+  margin: 3rem auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+}
+
+button,
+input {
+  border-style: none;
+  border-radius: 50px;
+  height: 4rem;
+  width: 22rem;
+  font-weight: 700;
+}
+
+button {
+  background: var(--blue-gradient1);
+}
+
+button:hover {
+  background: var(--blue-gradient2);
+}
+
+p {
+  margin: 1rem auto;
+}
+
+/* ------ NAV BAR ------ */
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 454px;
+  background-color: var(--dark-blue-intro-email-bg);
+}
+
+nav img {
+  height: 3rem;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding: 1.5rem;
+}
+
+/* ------ SECTION :INTRO ------ */
+
+.intro {
+  text-align: center;
+  padding: 0 33px;
+  margin: 0 auto;
+}
+
+.intro img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+/* ------ SECTION : PROPERTIES CARDS ------ */
+
+.properties img {
+  margin-bottom: 2rem;
+  height: 4.5rem;
+  width: auto;
+}
+
+.properties .card {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ------ SECTION : STAY PRODUCTIVE ------ */
+
+.stay-prod img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  align-self: center;
+}
+
+#see-how-link {
+  border-bottom-style: solid;
+  border-width: 2px;
+  color: var(--cyan-button);
+  padding: 0.4rem;
+}
+
+#see-how-link::after {
+  content: url(../images/icon-arrow.svg);
+  vertical-align: middle;
+}
+
+#see-how-link:hover {
+  border-width: 4px;
+}
+
+/* ------ SECTION : TESTIMONIALS ------ */
+
+.testimonials {
+  background-image: url(../images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 4.3rem 1rem;
+  background-size: 3rem;
+}
+
+.testimonial-card {
+  background-color: var(--dark-blue-testim-bg);
+  border-radius: 2px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 3rem;
+}
+
+.profil {
+  align-self: flex-start;
+  display: flex;
+}
+
+.profil img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* ------ SECTION : FORM ------ */
+
+.form {
+  background-color: var(--dark-blue-intro-email-bg);
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  padding: 3rem;
+  border-radius: 2px;
+  margin: auto 2rem;
+}
+
+.form-bg {
+  background-image: linear-gradient(
+    0deg,
+    var(--dark-blue-footer-bg) 50%,
+    var(--dark-blue-main-bg) 50%
+  );
+}
+
+.form input {
+  background-color: white;
+  color: lightgray;
+  padding-left: 2rem;
+  margin: 1.5rem 0px;
+  font-weight: 400;
+}
+
+/* ------- FOOTER ------ */
+
+footer {
+  background-color: var(--dark-blue-footer-bg);
+  padding: 4rem 2rem 0px 2rem;
+}
+
+.contact-div {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  margin: 1rem auto;
+}
+
+.contact-div p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+li {
+  padding: 0.5rem;
+}
+
+.social-media-container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+}
+
+.social-media-container i {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 8.5px;
+  width: 36px;
+  height: 34px;
+}
+
+.social-media-container i:hover {
+  color: var(--cyan-button);
+  border-color: var(--cyan-button);
+  border-width: 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+  .intro,
+  .properties,
+  .stay-prod,
+  .testimonials,
+  .card,
+  .form {
+    max-width: 95vw;
+  }
+
+
+  h1 {
+    font-size: 3rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .background-top {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-size: 100vw 20vh;
+  }
+
+  .properties {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    max-width: 1000px;
+  }
+
+  .properties .card {
+    margin-top: 0rem;
+    flex: 50%;
+    height: 18rem;
+    min-width: 18rem;
+    max-width: 430px;
+  }
+
+  .stay-prod {
+    flex-direction: row;
+  }
+
+  .stay-prod img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .stay-prod div {
+    margin-left: 2rem;
+    width: 50%;
+  }
+
+  .stay-prod h2 {
+    font-size: 2rem;
+    max-width: 300px;
+  }
+
+  .testimonials {
+    flex-direction: row;
+    margin-bottom: 7rem;
+  }
+
+  .testimonial-card {
+  margin: 1rem 1rem;
+  max-width: 380px;
+}
+
+  .form {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .contact-icon {
+    margin-right: 1rem;
+  }
+
+  .contact-div2 {
+    margin: 0 2rem 1rem 2rem;
+  }
+
+  ul {
+    margin: 0 1rem 2rem 1rem;
+    min-width: 110px;
+  }
+
+  .social-media-container {
+    margin: 0 0 0 2rem;
+    min-width: 120px;
+    max-width: 150px;
+  }
+}
+
+/* ------ REMOVE DEFAULT STYLE ------ */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
